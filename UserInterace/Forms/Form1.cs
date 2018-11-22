@@ -19,11 +19,26 @@ namespace UserInterace.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int age = Convert.ToInt32(textBox1.Text);
+            int age;
+                  try
+            {
+                age = Convert.ToInt32(textBox1.Text);
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Enter number");
+                return;
+            }
+
+
+            //int age = Convert.ToInt32(textBox1.Text);
             if (age==18)
             {
+                this.Show();
                 var mainForm = new MainForm();
-
+                mainForm.Show();
             }
             else
             {
