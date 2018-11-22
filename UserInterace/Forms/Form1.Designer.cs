@@ -1,4 +1,4 @@
-﻿namespace UserInterace
+﻿namespace UserInterace.Forms
 {
     partial class Form1
     {
@@ -37,4 +37,3 @@
         #endregion
     }
 }
-
