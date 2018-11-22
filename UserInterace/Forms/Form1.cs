@@ -20,10 +20,11 @@ namespace UserInterace.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             int age = Convert.ToInt32(textBox1.Text);
-            if (age==18)
+            if (age>18)
             {
+                this.Hide();
                 var mainForm = new MainForm();
-
+                mainForm.Show();
             }
             else
             {
