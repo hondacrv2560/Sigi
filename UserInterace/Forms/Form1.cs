@@ -22,6 +22,7 @@ namespace UserInterace.Forms
             int age = Convert.ToInt32(textBox1.Text);
             if (age==18)
             {
+                var mainForm = new MainForm();
 
             }
             else
