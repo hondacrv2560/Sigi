@@ -15,6 +15,7 @@ namespace UserInterace.Forms
         public MainForm()
         {
             InitializeComponent();
+            System.Diagnostics.Debug.WriteLine("Login from login form");
         }
     }
 }
