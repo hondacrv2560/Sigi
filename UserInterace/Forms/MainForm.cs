@@ -17,5 +17,12 @@ namespace UserInterace.Forms
             InitializeComponent();
             System.Diagnostics.Debug.WriteLine("Login from login form");
         }
+
+        private void listBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            Post post = listbox.SelectedItem;
+            GoodDetails goodDetails = new GoodDetails(post);
+            goodDetails.Show();
+        }
     }
 }
