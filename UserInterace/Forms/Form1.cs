@@ -31,5 +31,10 @@ namespace UserInterace.Forms
                 MessageBox.Show("Еще юн");
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Login from login form");
+        }
     }
 }
