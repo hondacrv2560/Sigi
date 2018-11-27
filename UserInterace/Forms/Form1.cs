@@ -19,6 +19,7 @@ namespace UserInterace.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             int age;
             try
             {
@@ -33,6 +34,12 @@ namespace UserInterace.Forms
             if (age>=18)
             {
                 this.Show();
+
+            int age = Convert.ToInt32(textBox1.Text);
+            if (age>18)
+            {
+                this.Hide();
+
                 var mainForm = new MainForm();
                 mainForm.Show();
             }
@@ -40,6 +47,11 @@ namespace UserInterace.Forms
             {
                 MessageBox.Show("Еще юн");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Login from login form");
         }
     }
 }
